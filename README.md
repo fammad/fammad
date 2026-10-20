@@ -1,48 +1,63 @@
 ## Hi, I'm Fuad
 
-I build eye tracking systems end to end: the camera, the gaze model, the calibration, and the honest number at the end.
+I build systems that understand people through sensors and respond to them: computer vision and machine learning on one end, XR, robots and embedded hardware on the other. I take them from the raw signal to a working prototype people can use, and I measure where they fail.
 
-MSc Interactive Media Technology at KTH, Stockholm · B.Eng. Mechatronics and Robotics · **looking for a 2027 master's thesis** in eye tracking, driver monitoring, gaze in XR or gaze-based assistive technology.
+MSc Interactive Media Technology at KTH, Stockholm · B.Eng. Mechatronics and Robotics · **looking for a 2027 master's thesis** in computer vision, human-centred AI, XR or perception for vehicles and robots.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white) ![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square&logo=google&logoColor=white) ![Unity](https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white) ![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white) ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)
 
-### Eye tracking
+### Projects
 
 <table>
 <tr>
 <td width="50%" valign="top">
 <a href="https://github.com/fammad/gaze-XR-training"><img src="https://raw.githubusercontent.com/fammad/gaze-XR-training/main/media/header.gif" width="100%" alt="Fixations, scanpath and heatmap in a VR workbench, with the IR eye camera in the corner"></a>
-<br><b><a href="https://github.com/fammad/gaze-XR-training">gaze-XR-training</a></b> · eye tracking in VR
+<br><sub>EYE TRACKING · XR</sub>
+<br><b><a href="https://github.com/fammad/gaze-XR-training">gaze-XR-training</a></b>
 <br>An infrared camera glued under a Quest 3 lens, a pupil tracker and a Unity gaze toolkit. Calibration fit <b>0.8°</b>, independent grid <b>about 5°</b>, and a blueprint of which training metrics that accuracy supports.
 <br><sub>Unity · C# · Python · OpenCV · Quest 3</sub>
 </td>
 <td width="50%" valign="top">
 <a href="https://github.com/fammad/GazeMap"><img src="https://raw.githubusercontent.com/fammad/GazeMap/main/assets/demo_pedestrians.gif" width="100%" alt="Gaze trail over a street scene next to the webcam image"></a>
-<br><b><a href="https://github.com/fammad/GazeMap">GazeMap</a></b> · webcam gaze estimation
+<br><sub>EYE TRACKING · DEEP LEARNING</sub>
+<br><b><a href="https://github.com/fammad/GazeMap">GazeMap</a></b>
 <br>A CNN trained from scratch on 427k eye images, tested on people it never saw: <b>3.98°</b> after calibration, <b>1.55°</b> in the live demo, with a full failure analysis.
 <br><sub>PyTorch · MediaPipe · OpenCV · MPIIGaze</sub>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/fammad/Lumen_blink_detection"><img src="https://raw.githubusercontent.com/fammad/Lumen_blink_detection/main/assets/lumen.jpeg" width="100%" alt="Lumen silicone light dome next to a laptop"></a>
-<br><b><a href="https://github.com/fammad/Lumen_blink_detection">Lumen</a></b> · blink and fatigue detection
-<br>Blink rate from a webcam drives a silicone light on the desk from white to amber to red. <b>F1 0.92</b> with head turns up to ±45°, failure envelope documented.
-<br><sub>MediaPipe · OpenCV · ESP32-S3 · C++</sub>
+<a href="https://github.com/fammad/vehicle-trajectory-generation"><img src="https://raw.githubusercontent.com/fammad/vehicle-trajectory-generation/main/docs/flow_ABCD.gif" width="100%" alt="Twenty generated futures for one left-turning car under four constraint strategies"></a>
+<br><sub>AUTOMOTIVE · GENERATIVE MODELS · TEAM</sub>
+<br><b><a href="https://github.com/fammad/vehicle-trajectory-generation">Vehicle trajectory generation</a></b>
+<br>Flow Matching on drone recordings of an Aachen intersection (inD). Without road rules <b>28 %</b> of generated futures leave the road; soft guidance fixes that at no cost in smoothness, while hard projection multiplies jerk up to <b>5×</b>.
+<br><sub>PyTorch · Flow Matching · inD dataset</sub>
 </td>
 <td width="50%" valign="top">
+<a href="https://github.com/fammad/Lumen_blink_detection"><img src="https://raw.githubusercontent.com/fammad/Lumen_blink_detection/main/assets/lumen.jpeg" width="100%" alt="Lumen silicone light dome in different states"></a>
+<br><sub>ATTENTION · EMBEDDED · NORDICHI 2026 DEMO SUBMISSION</sub>
+<br><b><a href="https://github.com/fammad/Lumen_blink_detection">Lumen</a></b>
+<br>Blink rate from a webcam drives a silicone light on the desk from white to amber to red. <b>F1 0.92</b> with head turns up to ±45°. No frames saved, no cloud, failure envelope documented.
+<br><sub>MediaPipe · OpenCV · ESP32-S3 · C++</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 <a href="https://github.com/fammad/Qonur_Robotic_Bear"><img src="https://raw.githubusercontent.com/fammad/Qonur_Robotic_Bear/main/assets/Image_Qonur_front-back.png" width="100%" alt="Qonur robot bear, front and back"></a>
-<br><b><a href="https://github.com/fammad/Qonur_Robotic_Bear">Qonur</a></b> · social robot for children
-<br>A talking animatronic bear for anti-bullying theatre. AI dialogue, ten servos, human-operated choreography. Deployed in a children's shelter and a rural village.
+<br><sub>HUMAN-ROBOT INTERACTION · SDC-FUNDED</sub>
+<br><b><a href="https://github.com/fammad/Qonur_Robotic_Bear">Qonur</a></b>
+<br>A talking animatronic bear for anti-bullying theatre: AI conversation, human-operated choreography, ten servos. Deployed in a children's shelter and a rural village. <a href="https://www.youtube.com/watch?v=doGUTJyK8F4">Watch it perform</a>.
 <br><sub>Python · Gemini API · ESP32 · Fusion 360</sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/fammad/EmotionRadar"><img src="https://raw.githubusercontent.com/fammad/EmotionRadar/main/assets/emotionradar_demo.gif" width="100%" alt="Emotion Radar tagging a sentence and showing the words behind each emotion"></a>
+<br><sub>NLP · INTERPRETABLE ML · TEAM</sub>
+<br><b><a href="https://github.com/fammad/EmotionRadar">EmotionRadar</a></b>
+<br>Seven emotions at once from 58k Reddit comments, every prediction traced to its words. Macro-F1 <b>0.25 → 0.51</b>, plus a negative result shown three ways: emotions do not cluster in TF-IDF space. Runs in one click on Colab.
+<br><sub>scikit-learn · TF-IDF · GoEmotions</sub>
 </td>
 </tr>
 </table>
-
-### Also
-
-**[vocab-tree-image-retrieval](https://github.com/fammad/vocab-tree-image-retrieval-EQ2425)** · image retrieval with SIFT, a vocabulary tree and TF-IDF ranking
-**[EmotionRadar](https://github.com/fammad/EmotionRadar)** · multi-label emotion detection from text, macro-F1 0.25 to 0.51, plus a negative clustering result written up honestly
 
 ### How I work
 
@@ -57,7 +72,7 @@ Before KTH I spent four years at Ritual Theater lab in Baku putting technology o
 | | |
 |---|---|
 | Eye tracking | pupil detection and ellipse fitting (RANSAC), appearance-based gaze estimation, polynomial and affine calibration, accuracy and precision grids, I-VT fixations, AOI analysis, blink detection (EAR) |
-| Computer vision and ML | OpenCV, MediaPipe, PyTorch, scikit-learn, NumPy, pandas, Matplotlib |
+| Computer vision and ML | OpenCV, MediaPipe, PyTorch (CNNs, Flow Matching), scikit-learn, NumPy, pandas, Matplotlib |
 | Evaluation | leave-one-person-out splits, leakage checks, angular error, per-condition failure analysis, seeded reproducible runs |
 | XR | Unity 6 (C#, URP, OpenXR, XR Interaction Toolkit), Meta Quest, synced session recording |
 | Hardware | IR camera modules, ESP32 / ESP32-S3, Arduino, servo control, USB serial, Fusion 360, 3D printing |
@@ -67,6 +82,6 @@ Before KTH I spent four years at Ritual Theater lab in Baku putting technology o
 
 ### Now
 
-Two computer vision courses at KTH this autumn. Next on the headset tracker: slip correction with corneal glints and gaze from commercial headsets through OpenXR.
+Two computer vision courses at KTH this autumn, including a vocabulary-tree image retrieval system built from scratch (SIFT, hierarchical k-means, TF-IDF). Next on the headset tracker: slip correction with corneal glints and gaze from commercial headsets through OpenXR.
 
 [fammad.com](https://fammad.com) · [LinkedIn](https://www.linkedin.com/in/fammad/) · hej@fammad.com
