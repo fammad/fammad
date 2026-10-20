@@ -1,6 +1,6 @@
 ## Hi, I'm Fuad
 
-I build systems that understand people through sensors and respond to them: computer vision and machine learning on one end, XR, robots and embedded hardware on the other. I take them from the raw signal to a working prototype people can use, and I measure where they fail.
+I build systems that understand people through sensors and respond to them: computer vision and machine learning on one end, XR, robots and embedded hardware on the other. I take them from the raw signal to a working prototype people can use, and I measure where they fail before I report what they do.
 
 MSc Interactive Media Technology at KTH, Stockholm · B.Eng. Mechatronics and Robotics · **looking for a 2027 master's thesis** in computer vision, human-centred AI, XR or perception for vehicles and robots.
 
@@ -50,11 +50,11 @@ MSc Interactive Media Technology at KTH, Stockholm · B.Eng. Mechatronics and Ro
 <br><sub>Python · Gemini API · ESP32 · Fusion 360</sub>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/fammad/EmotionRadar"><img src="https://raw.githubusercontent.com/fammad/EmotionRadar/main/assets/emotionradar_demo.gif" width="100%" alt="Emotion Radar tagging a sentence and showing the words behind each emotion"></a>
-<br><sub>NLP · INTERPRETABLE ML · TEAM</sub>
-<br><b><a href="https://github.com/fammad/EmotionRadar">EmotionRadar</a></b>
-<br>Seven emotions at once from 58k Reddit comments, every prediction traced to its words. Macro-F1 <b>0.25 → 0.51</b>, plus a negative result shown three ways: emotions do not cluster in TF-IDF space. Runs in one click on Colab.
-<br><sub>scikit-learn · TF-IDF · GoEmotions</sub>
+<a href="https://github.com/fammad/tbana-perceived-safety"><img src="https://raw.githubusercontent.com/fammad/tbana-perceived-safety/main/assets/cover_4x3.jpg" width="100%" alt="Child and caregiver at the edge of a VR subway platform with glass doors"></a>
+<br><sub>XR USER STUDY · HUMAN PERCEPTION · TEAM</sub>
+<br><b><a href="https://github.com/fammad/tbana-perceived-safety">Perceived safety on a T-bana platform</a></b>
+<br>A within-subject VR study on a Quest 2: 16 randomised scenes, 7 participants, four factors (child or adult, crowd, caregiver, glass doors). Doors raised felt safety in every condition; a child alone at a crowded open edge scored lowest, about <b>1.9 of 5</b>.
+<br><sub>Unity · Quest 2 · Likert survey · KTH DM2350</sub>
 </td>
 </tr>
 </table>
